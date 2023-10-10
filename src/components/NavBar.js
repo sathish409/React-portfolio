@@ -11,22 +11,21 @@ const NavBar = () => {
             </div> 
             <div className='menu'>
                 <ul className='flex'>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/Skills'>Skills</Link>
-                    </li>
-                    <li>
-                        <Link to='/Projects'>Projects</Link>
-                    </li>
-                   
-                    <li>
-                        <Link to='/About'>About</Link>
-                    </li>
-                    <li>
-                        <Link to='/Contact'>Contact</Link>
-                    </li>
+                <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#Skills">Skills</a>
+            </li>
+            <li>
+              <a href="#Projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
                 </ul>
                 </div> 
         </nav>
