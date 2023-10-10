@@ -2,7 +2,7 @@
 import profilePic from "../assests/IMG-5718.jpg"
 const About = () => {
   return (
-    <section id="about" className="about">
+    <section id="About" className="about">
       <h2 className="title">About Me</h2>
 
       <div className="container flex">

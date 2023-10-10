@@ -86,7 +86,7 @@ background: yellow;
 .menu ul{
   list-style: none;
 }
-
+/* Hero */
 
 .hero-section{
   padding-top: 10rem;
@@ -234,4 +234,14 @@ background: yellow;
 }
 .email-container i{
   color: var(--color-orange);
+}
+.main{
+min-height: 78vh;
+}
+.footer{
+  background: #000;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  margin-top: 2rem;
 }

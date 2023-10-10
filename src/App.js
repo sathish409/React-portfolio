@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Works from './components/Works';
 import About from './components/About';
 import Contact from './components/Contact'; 
+import Footer from "./components/Footer";
 import {routes, route} from "react-router-dom"
 function App() {
   return (
@@ -15,15 +16,15 @@ function App() {
         <div className="dark-mode-toggle">
         <i class="fa-solid fa-circle-half-stroke"></i> 
         </div>
-      </label>
-      
-<NavBar />
+      </label>     
+<NavBar /> 
 <Hero />
 <Info />
 <Skills/>
 <Works />
 <About/>
 <Contact/>
+<Footer/>
 </div>
 </>
   );
