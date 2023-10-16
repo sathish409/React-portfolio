@@ -8,7 +8,7 @@ const Hero = () => {
             <div className='left flex'>
                 <p>
                     Hi I'm <span>
-                        Sathsih Boga
+                        Sathish Boga
                     </span>
                 </p>
                 <h3>
