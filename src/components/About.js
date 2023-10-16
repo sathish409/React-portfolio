@@ -11,7 +11,7 @@ const About = () => {
         </div>
 
         <div className="about-right">
-          <h2>Prem Acharya</h2>
+          <h2>Sathish Boga</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, quas
             quaerat repudiandae nulla nihil aspernatur perspiciatis labore

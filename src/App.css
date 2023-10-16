@@ -98,6 +98,25 @@ background: yellow;
   padding: 0 2rem;
 
 }
+@media (max-width: 768px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+    grid-template-areas:
+      "right"
+      "left";
+      background-color: #ff5c00;
+      padding: 0 2rem;
+  }
+  .right .right img{
+    width:  80%;
+  }
+.hero .right {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+}
 .left{
   flex-direction: column;
   grid-area: left;
@@ -121,7 +140,6 @@ background: yellow;
   align-items: center;
   margin-top: -5rem;
 }
-
 .img-container{
   width: 50%;
 }
@@ -136,6 +154,20 @@ background: yellow;
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
+}
+@media (max-width:768px) {
+  .banner{
+    flex-direction: column;;
+    align-items: start;
+    width: 250px;
+
+  }
+  .info-content{
+    margin-bottom: 3rem;
+  }
+  .info-divider{
+    display: none;
+  }
 }
 .icon-container{
   background: var(--color-orange);
@@ -188,16 +220,24 @@ background: yellow;
 /* Works */
 .projects{
   margin-top: 3rem;
-  padding: 7rem;
+  padding: 7rem 0;
 
 }
 .projects-container{
-  grid-template-areas: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:768px) 
+{
+  .projects-container {
+display: grid;    
+grid-template-columns:1fr;
+  }  
 }
 .project-card{
   box-shadow: -1px 14px 20px 8px rgba(red, green, blue, alpha);
   border-radius: 5px;
   padding-bottom: 2rem;
+
 }
 .project-card .top img{
   width: 100%;
@@ -205,6 +245,27 @@ background: yellow;
   border-bottom-left-radius: 5px;
 }
 /* About me */
+.about{
+  background: rgba(red, green, blue, alpha);
+  padding: 7rem 0;
+}
+.about-left{
+  justify-content: center;
+  width: 60%;
+}
+.about-left img {
+  min-width: 350px;
+  max-width: 400px;
+}
+.about-right h2{
+  font-size: 2rem;
+  margin-bottom: 3rrem;
+}
+.about-right p:nth-child(4){
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
 .about-right .tag{
   font-weight: bold;
   font-size: 1.3rem;
@@ -217,6 +278,9 @@ background: yellow;
 /* Contact */
 .socials a i{
   font-size: 2rem;
+}
+.socials{
+  justify-content: center;
 }
 .email-container{
   border: 1px solid var(--color-dark);
@@ -238,10 +302,47 @@ background: yellow;
 .main{
 min-height: 78vh;
 }
-.footer{
+.Footer{
   background: #000;
   text-align: center;
   color: white;
   padding: 3rem;
   margin-top: 2rem;
+}
+/* Hamburger */
+/* Nav */
+
+/* responsive */
+.hamburger{
+  display: none;
+
+}
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .navigation ul{
+    flex-direction: column;
+    position: fixed;
+    width: 15rem;
+    left: 100%;
+    background:var(--body-bg);
+    height: 100vh;
+    top: 3.3rem;
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 0 1px rgba(red, green, blue, alpha);
+  }
+  .navigation ul li{
+padding-left: 1rem;
+line-height: 3rem;
+font-weight: bold;
+  }
+  .navigation .slide{
+    left: calc(100%-15rem);
+  }
+ .about .container{
+  flex-direction: column;
+  align-items: center;
+ } 
 }

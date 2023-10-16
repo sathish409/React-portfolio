@@ -1,34 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import  { useState } from 'react'
 const NavBar = () => {
+const [showMenu, setShowMenu]=useState(false);
   return (
     <header>
         <nav className='container flex navigation'>
           <div className='flex nav-left'>
             <h1>Sathish</h1>
             <div className='line'>Soft.Engineer</div>
-            </div> 
+            </div>
+            
             <div className='menu'>
-                <ul className='flex'>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/Skills'>Skills</Link>
-                    </li>
-                    <li>
-                        <Link to='/Projects'>Projects</Link>
-                    </li>
-                   
-                    <li>
-                        <Link to='/About'>About</Link>
-                    </li>
-                    <li>
-                        <Link to='/Contact'>Contact</Link>
-                    </li>
+               <div className="hamburger">
+                {showMenu ?(
+                    <i class="fa-solid fa-xmark" onClick={()=>setShowMenu(false)}></i>
+                ):(<i class="fa-solid fa-bars" onClick={()=>setShowMenu(true)}></i>
+                )}
+                </div> 
+                <ul className={showMenu ? "flex slide":"flex" }onClick={()=>setShowMenu(false)}>
+                <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#Skills">Skills</a>
+            </li>
+            <li>
+              <a href="#Projects">Projects</a>
+            </li>
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
                 </ul>
                 </div> 
+              
         </nav>
     </header>
   )
