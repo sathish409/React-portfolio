@@ -193,7 +193,7 @@ background: yellow;
 
 }
 .projects-container{
-  grid-template-areas: repeat(2, 1fr);
+ grid-template-columns: repeat(3, 1fr);
 }
 .project-card{
   box-shadow: -1px 14px 20px 8px rgba(red, green, blue, alpha);
